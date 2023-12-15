@@ -1,0 +1,135 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	font-family: "Roboto";
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	/* padding: 50px; */
+    display: flex;
+    flex-direction: column;
+}
+
+/*  */
+#root{
+    height: 100%;
+}
+.main{
+    flex-grow: 1;
+}
+
+[class*="__container"]{
+    max-width: 1020px;
+    margin: 0px auto;
+}
+
+.header__container{
+    text-align: center;
+    font-size: 36px;
+    padding: 36px;
+    letter-spacing: 0.15cm;
+}
+
+.header:not(:last-child){
+    margin-bottom: 70px;
+}
+
+.pizza_items{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    margin: 0px -10px;
+}
+
+
+
+.pizza__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* justify-content: center; */
+    flex: 50% 1 1;
+    padding: 0px 20px;
+    /* justify-content: center; */
+}
+.pizza__item img{
+    width: 180px;
+    border-radius: 8px;
+}
+
+
+.pizza__content{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px   ;
+}
+
+.footer{
+    padding: 50px;
+    text-align: center;
+}
+.footer a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.sold_out{
+    color: grey;
+}
+.sold_out img{
+    filter: grayscale();
+    opacity: 0.8;
+}
+
+.text{
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 22px;
+    font-weight: 600;
+}
